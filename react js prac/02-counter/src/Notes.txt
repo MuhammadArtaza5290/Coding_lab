@@ -1,0 +1,57 @@
+// agar hum ik file ko default export krta han like 
+export default App;
+
+to hum is file ko dusri file me bageer kisi curly braces ke import kran gy like. default export me hum jab import kran ge apni file ko to hum us ka name change kr sakta han during import like.
+
+==>  import MyApp form './app/App.js'
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+// agr hum ik file ko simple export krta han like
+export App;
+
+to hum is file ko dusri file me curly braces ke import krta han like. jab hum simple export krta han to during import hum file ke name ko change nahi kr sakta. like hum ne export name me App diya to jab hum import kran ge to hum same name use kran ge.
+
+==>  import {App} from './app/App.js'   valid syntax
+==>  import {MyApp} from './app/App.js'  invalid syntax
+
+
+=============================================================
+
+
+ik or bat ke ik js file ke andar hum ik hi cheez ko default export kr sakta han or agr kisi or cheez ko export krna ha to wo simple export ho gi na ke default export.
+
+==============================================================
+
+agar hum javascript ke function me html return krta han ko wo function react ka component ban jata ha..
+like..
+function name(){
+    return 'jalii'
+    // ye ho gya javascript ka function
+}
+
+and
+ function Name(){
+    return(
+        <h1> Hello World </h1>
+    )
+    // ye react ka component ban gya ha.
+ }
+
+ =============================================================
+
+ Image
+
+ method 1)
+ import First from '../assets/first.jpg'
+
+ <img src={First} alt="First" />
+
+
+ method 2)
+
+ <body>
+    <img src={require("../path")} />
+
+ </body>
