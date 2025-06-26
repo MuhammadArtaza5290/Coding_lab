@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import ColorPicker from "./components/colorPicker/ColorPicker";
-import Form from "./components/form/Form";
+// import ColorPicker from "./components/colorPicker/ColorPicker";
+// import Form from "./components/form/Form";
+import ShowHide from "./components/showHide/ShowHide";
+import StudentList from "./components/studentList/StudentList";
 // import Theme from "./components/theme/Theme";
 
 function App() {
@@ -32,7 +34,9 @@ function App() {
     <>
       {/* <Theme/> */}
       {/* <ColorPicker/> */}
-      <Form/>
+      {/* <Form/> */}
+      {/* <ShowHide/> */}
+      <StudentList/>
       {/* <div style={{backgroundColor: 'gray', width: '100%'}}>
         <h1>Counter App {counter}</h1>
         <div style={{border: '1px solid black',height: '250px', borderRadius: '20px', backgroundColor: 'lightgrey'}}>

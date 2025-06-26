@@ -1,0 +1,21 @@
+development enviroment me msg show krwany ke liya
+install debug 
+require it with select mode 
+("development:mode")
+
+most important thing is 
+this command write in terminal => $env:DEBUG="development:*"
+
+
+and most important thing
+windows me cmd ke through enviroment variable setup kesa krta han
+$env:NODE_ENV="development"
+is command sy hum koi bi enviroment create kar sakta han
+like agr hum production mode me han to development ki jgha just production lga den gy.
+
+
+======================================================
+ ab owner create krna ke liya kya krna ha
+ 1) owner create krna ke liya sab sy pehla hmara development mode me hona lazmi ha
+ 2) agr pehla sy koi owner create ha to hum dobara owner create nahi kar sakty route kam hi nahi kra ga.
+  
