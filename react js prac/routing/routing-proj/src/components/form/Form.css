@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: darkcyan;
+} */
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgba(17, 30, 92, 0.555);
+}
