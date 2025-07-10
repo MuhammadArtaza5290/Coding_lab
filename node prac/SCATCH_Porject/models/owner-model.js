@@ -12,7 +12,6 @@ const ownerSchema = mongoose.Schema({
         default: []
     },
     picture: String,
-    gstno: String
 })
 
 

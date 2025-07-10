@@ -1,0 +1,6 @@
+1) This summary about async/await with try/catch.
+=>Jahan bhi async/await use hota hai, waha try...catch zaroor lagate hain kyun ke API ya delay wale kaam me error (reject) aane ka chance hota hai. Try block me hum response handle karte hain aur catch block me error. Ye best practice hai taake app smoothly chale.
+
+2) This summary about useEffect and why we dont use async directly in useEffect?
+useEffect async nahi ho sakta kyun ke wo Promise return karta hai, jo React handle nahi karta. Is liye agar API call karni ho to useEffect ke andar ek async function banate hain aur usme await ka use karte hain. Agar error aaye to usse try...catch block me handle karte hain. async/await un jagah use hota hai jahan APIs ya delayed kaam ho jaise server se data lana.
+
