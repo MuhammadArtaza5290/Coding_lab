@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-gap: 5px;
+        height: 100vh;
+      }
+      .items {
+        background-color: yellow;
+        border: 2px solid black;
+      }
+      .item-body{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+        justify-content: center;
+        grid-gap: 20px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items">header</div>
+      <div class="items item-body">
+        <div class="items">box 1</div>
+        <div class="items">box 2</div>
+        <div class="items">box 3</div>
+        <div class="items">box 4</div>
+        <div class="items">box 5</div>
+      </div>
+      <div class="items">footer</div>
+    </div>
+  </body>
+</html>
