@@ -19,3 +19,11 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage })
 
 module.exports = upload;
+
+//  randomBytes(12) 12 bytes generate  kar rha ha. Har file ka naya random naam banaya ja raha hai.
+
+// crypto random data deta hai → hex me convert hota hai.
+
+// File ka original extension lagaya jata hai.
+
+// Fir multer ko ye naya naam diya jata hai via callback.

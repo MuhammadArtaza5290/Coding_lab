@@ -15,13 +15,14 @@
         <h3 class="text-xl">
             Scatch
         </h3>
-        <div class="flex gap-5">
+        <div class="flex gap-5 mt-3">
             <a href="/shop">Shop</a>
             <a href="/cart">Cart</a>
             <a href="/account">My Account</a>
             <a class="text-red-600" href="/users/logout">Logout</a>
         </div>
     </nav>
+    <% if (user.cart.length > 0){%>
     <% user.cart.forEach((val)=>{ %>
         <% let bill = (val.price + 20) - val.discount %>
     <div class="w-full h-screen flex items-start px-20 py-20 gap-10">
@@ -71,5 +72,8 @@
         </div>
     </div>
       <% }) %>
+      <%}else{%>
+        <h2 class=" text-xl font-semibold m-5">No prodects add yet...</h2>
+      <%}%>
 </body>
 </html>
